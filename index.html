@@ -1,19 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma premiere page html</title>
-   <!-- ===== Ajoute le lien vers le fichier style.css ===== -->
+    <title>Nelson Voukeng | Portfolio Développeur Junior</title>
+    <!-- Google Fonts : Montserrat pour les titres et Poppins pour le texte -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon personnalisé (Emoji éclair) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
     <link rel="stylesheet" href="style.css">
-  </head>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
 <body>
+    <!-- ===== HEADER / NAVIGATION ===== -->
     <header>
         <div class="container">
             <nav>
                 <div class="logo">
-                    <!-- TODO MARDI HTML : Changez le nom (remplacez par VOTRE NOM) -->
-                    NELSON VOUKENG
+                    NELSON <span>VOUKENG</span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#about">À propos</a></li>
@@ -28,14 +42,9 @@
     <!-- ===== HERO SECTION ===== -->
     <section class="hero">
         <div class="container">
-            <h1>
-                <!-- TODO MARDI HTML : Changez ce titre (ex: "Je suis développeur web") -->
-                je suis développeur web junior 
-            </h1>
-            <p>
-                <!-- TODO MARDI HTML : Changez cette description (parlez de VOUS) -->
-                Je suis étudiant passionné par le code
-            </p>
+            <div class="badge">Étudiant à HETIC</div>
+            <h1>Développeur Web Junior <br><span>Passionné par le code</span></h1>
+            <p>Je suis Nelson Voukeng, futur expert en développement web. Je crée des interfaces modernes, intuitives et performantes.</p>
             <a href="#projects" class="cta-button">Découvrir mes projets</a>
         </div>
     </section>
@@ -44,25 +53,15 @@
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">À propos de moi</h2>
-            
             <div class="about-content">
                 <div class="about-image">
-                    <img src="WhatsApp Image 2025-10-17 à 20.19.57_91090dba - Copie (2) - Copie.jpg" alt="Photo de profil">
+                    <!-- Photo de profil Nelson -->
+                    <img src="bg.jpeg" alt="Nelson Voukeng">
                 </div>
-
                 <div class="about-text">
-                    <h2>
-                        <!-- TODO MARDI HTML : Changez ce titre (ex: "Qui suis-je ?") -->
-                        Qui suis-je ?
-                    </h2>
-                    <p>
-                        <!-- TODO MARDI HTML : Écrivez un paragraphe sur vous -->
-                        je suis développeur web junior, avec 1 ans d'expérience, j'aime fait le code 
-                    </p>
-                    <p>
-                        <!-- TODO MARDI HTML : Écrivez un deuxième paragraphe sur vous -->
-                        Mon objectif est de devenir un grand développeur d'application. Je travaille avec html, css, python et c++.
-                    </p>
+                    <h2>Qui suis-je ?</h2>
+                    <p>Je suis un développeur web junior avec 1 an d'expérience. J'aime transformer des idées complexes en solutions numériques simples.</p>
+                    <p>Mon objectif est de devenir un développeur web expert. Je travaille quotidiennement avec <strong>HTML, CSS, JavaScript et C++</strong>.</p>
                 </div>
             </div>
         </div>
@@ -72,24 +71,21 @@
     <section class="skills" id="skills">
         <div class="container">
             <h2 class="section-title">Mes Compétences</h2>
-            
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">🌐</div>
-                    <h3>utlisation de html</h3>
-                    <p>creation des pages webs avec html</p>
+                    <h3>Structure Web</h3>
+                    <p>Maîtrise de HTML5 sémantique pour des sites accessibles et bien référencés.</p>
                 </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">⚙️</div>
-                    <h3>utilisation de css</h3>
-                    <p></p>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Utilisation d'outils d'IA pour optimiser mon flux de travail et coder plus vite.</p>
                 </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">🎨</div>
-                    <h3>maitrise des outils IA</h3>
-                    <p></p>
+                    <h3>Design & CSS</h3>
+                    <p>Mise en forme moderne et responsive avec CSS3, Flexbox et Grid Layout.</p>
                 </div>
             </div>
         </div>
@@ -99,51 +95,45 @@
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">Mes Projets</h2>
-            
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">Restaurant</div>
+                    <div class="project-image project-grad-1">Les Délices de Lola</div>
                     <div class="project-content">
-                        <h3>site vitrine - les delices de NELLO</h3>
-                        <p>création d'un site vitrine moderne pour un restaurant avec présentation du menu, horaires et formulaire de contact.</p>
-                        <a href="https://NELLO-restaurant.com" class="project-link">Voir le projet →</a>
+                        <h3>Restaurant Virtuel</h3>
+                        <p>Création d’un site vitrine moderne pour un restaurant avec menu interactif et formulaire de contact.</p>
+                        <a href="#" class="project-link">Voir le projet →</a>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">To-Do app</div>
+                <div class="project-card inverse">
+                    <div class="project-image project-grad-2">Jeux Éducatif</div>
                     <div class="project-content">
-                        <h3>To-Do</h3>
-                        <p>application permettant d'ajouter, modifier et supprimer des taches avec sauvegarde en local.</p>
-                        <a href="htpps://githup.com/tonpseudo/todo-app" class="project-link">Voir le projet →</a>
+                        <h3>Apprendre en s'amusant</h3>
+                        <p>Portfolio pour un jeu éducatif présentant des objectifs pédagogiques et des fonctionnalités ludiques.</p>
+                        <a href="#" class="project-link">Voir le projet →</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== CONTACT SECTION / FORM ===== -->
+    <!-- ===== CONTACT SECTION ===== -->
     <section class="contact" id="contact">
         <div class="container">
             <h2>Me Contacter</h2>
-            
             <form class="contact-form">
                 <div class="form-group">
                     <label for="name">Votre nom</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont">
                 </div>
-
                 <div class="form-group">
                     <label for="email">Votre email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="Ex: jean@exemple.com">
                 </div>
-
                 <div class="form-group">
                     <label for="message">Votre message</label>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea id="message" name="message" placeholder="Dites-moi tout..."></textarea>
                 </div>
-
-                <button type="submit" class="submit-button">Envoyer</button>
+                <button type="submit" class="submit-button">Envoyer le message</button>
             </form>
         </div>
     </section>
@@ -153,32 +143,27 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>À propos</h3>
-                    <p>[Une courte phrase sur vous et votre domaine]</p>
+                    <h3>Nelson Voukeng</h3>
+                    <p>Développeur junior @ HETIC, spécialisé en création d'interfaces modernes.</p>
                 </div>
-
                 <div class="footer-section">
                     <h3>Liens rapides</h3>
-                    <p><a href="#about" style="color: #0071e3; text-decoration: none;">À propos</a></p>
-                    <p><a href="#projects" style="color: #0071e3; text-decoration: none;">Projets</a></p>
-                    <p><a href="#contact" style="color: #0071e3; text-decoration: none;">Contact</a></p>
+                    <p><a href="#about">À propos</a></p>
+                    <p><a href="#projects">Projets</a></p>
+                    <p><a href="#contact">Contact</a></p>
                 </div>
-
                 <div class="footer-section">
                     <h3>Suivez-moi</h3>
                     <div class="social-links">
-                        <a href="#">🐙</a>
-                        <a href="#">💼</a>
-                        <a href="#">🐦</a>
+                        <a href="#">Github</a>
+                        <a href="#">LinkedIn</a>
                     </div>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 © 2025 NELSON VOUKENG. Tous droits réservés.
             </div>
         </div>
     </footer>
-
 </body>
 </html>
